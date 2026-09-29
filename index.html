@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página educativa sobre ciberseguridad creada por Erick Peña como proyecto final del curso de Introducción a HTML5.">
+  <meta name="author" content="Erick Peña">
+  <title>Ciberseguridad Básica | Erick Peña</title>
+  <style>
+    :root {
+      --azul-oscuro: #0b2545;
+      --azul: #13315c;
+      --acento: #00a8e8;
+      --claro: #f5f7fa;
+      --texto: #1a1a1a;
+      --gris: #4a4a4a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--texto);
+      background-color: var(--claro);
+    }
+
+    header {
+      background-color: var(--azul-oscuro);
+      color: #ffffff;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #d0e3f0;
+    }
+
+    nav {
+      background-color: var(--azul);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background-color: var(--acento);
+      color: var(--azul-oscuro);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      color: var(--azul-oscuro);
+      border-bottom: 3px solid var(--acento);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+      font-size: 1.7rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--gris);
+    }
+
+    figure {
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+
+    figure img {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: var(--gris);
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    ul {
+      list-style-position: inside;
+      background-color: #ffffff;
+      padding: 1.2rem 1.5rem;
+      border-left: 4px solid var(--acento);
+      border-radius: 4px;
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+      color: var(--texto);
+    }
+
+    .tarjetas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    article {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      flex: 1 1 260px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    article h3 {
+      color: var(--azul);
+      margin-bottom: 0.6rem;
+    }
+
+    a.enlace-externo {
+      color: var(--azul);
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: var(--azul-oscuro);
+      color: #ffffff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    footer a {
+      color: var(--acento);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ciberseguridad Básica</h1>
+    <p>Aprende a proteger tu vida digital &mdash; por Erick Peña</p>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <a href="#introduccion">Introducción</a>
+    <a href="#amenazas">Amenazas</a>
+    <a href="#consejos">Consejos</a>
+    <a href="#pilares">Pilares</a>
+    <a href="#recursos">Recursos</a>
+  </nav>
+
+  <main>
+    <section id="introduccion">
+      <h2>¿Qué es la ciberseguridad?</h2>
+      <p>
+        La <strong>ciberseguridad</strong> es el conjunto de prácticas, tecnologías
+        y procesos diseñados para proteger sistemas, redes, dispositivos y datos
+        frente a ataques digitales, accesos no autorizados y daños. En un mundo
+        cada vez más conectado, proteger nuestra información personal y profesional
+        se ha vuelto una necesidad fundamental.
+      </p>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+             alt="Pantalla con código y un candado digital que representa la seguridad informática">
+        <figcaption>La ciberseguridad protege nuestros datos en el entorno digital.</figcaption>
+      </figure>
+    </section>
+
+    <section id="amenazas">
+      <h2>Amenazas más comunes</h2>
+      <p>
+        Existen muchos tipos de ataques digitales. Conocerlos es el primer paso
+        para poder defenderse. Estas son algunas de las amenazas más frecuentes:
+      </p>
+      <ul>
+        <li><strong>Phishing:</strong> correos o mensajes falsos que buscan robar tus credenciales.</li>
+        <li><strong>Malware:</strong> software malicioso como virus, troyanos y ransomware.</li>
+        <li><strong>Ataques de fuerza bruta:</strong> intentos automatizados de adivinar contraseñas.</li>
+        <li><strong>Ingeniería social:</strong> manipulación psicológica para obtener información.</li>
+      </ul>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+             alt="Candado metálico sobre un teclado que simboliza la protección frente a amenazas">
+        <figcaption>Reconocer las amenazas ayuda a prevenir ataques.</figcaption>
+      </figure>
+    </section>
+
+    <section id="consejos">
+      <h2>Consejos para protegerte</h2>
+      <div class="tarjetas">
+        <article>
+          <h3>Contraseñas fuertes</h3>
+          <p>Usa contraseñas largas, únicas y con símbolos. Considera un gestor de contraseñas.</p>
+        </article>
+        <article>
+          <h3>Doble factor (2FA)</h3>
+          <p>Activa la verificación en dos pasos siempre que sea posible para mayor seguridad.</p>
+        </article>
+        <article>
+          <h3>Actualiza tus equipos</h3>
+          <p>Mantén el sistema operativo y las aplicaciones al día para corregir vulnerabilidades.</p>
+        </article>
+      </div>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+             alt="Líneas de código verde sobre fondo oscuro estilo matriz de datos">
+        <figcaption>Buenas prácticas diarias reducen enormemente los riesgos.</figcaption>
+      </figure>
+    </section>
+
+    <section id="pilares">
+      <h2>Los tres pilares de la seguridad</h2>
+      <p>
+        La seguridad de la información se sostiene sobre tres principios conocidos
+        como la tríada <strong>CIA</strong>:
+      </p>
+      <ul>
+        <li><strong>Confidencialidad:</strong> solo las personas autorizadas acceden a la información.</li>
+        <li><strong>Integridad:</strong> los datos se mantienen exactos y sin alteraciones no autorizadas.</li>
+        <li><strong>Disponibilidad:</strong> la información está accesible cuando se necesita.</li>
+      </ul>
+    </section>
+
+    <section id="recursos">
+      <h2>Recursos externos</h2>
+      <p>
+        Si quieres seguir aprendiendo sobre ciberseguridad, te recomiendo visitar
+        el sitio oficial de la
+        <a class="enlace-externo" href="https://owasp.org/" target="_blank" rel="noopener">
+          OWASP Foundation</a>, una organización internacional dedicada a mejorar
+        la seguridad del software.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Erick Peña &mdash; Proyecto final del curso de Introducción a HTML5.</p>
+    <p>Recurso recomendado: <a href="https://owasp.org/" target="_blank" rel="noopener">OWASP.org</a></p>
+  </footer>
+</body>
+</html>
